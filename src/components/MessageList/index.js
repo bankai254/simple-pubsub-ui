@@ -13,6 +13,7 @@ const MessageList = () => {
       .then(function (response) {
         // handle success
         console.log(response);
+        setMessages(response.data)
       })
       .catch(function (error) {
         // handle error
